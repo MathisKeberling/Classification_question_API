@@ -10,7 +10,7 @@ brotlipy==0.7.0
 cachetools==5.3.1
 constantly==15.1.0
 cssselect==1.1.0
-daal4py==2023.0.2
+daal4py==2023.1.1
 datashape==0.5.4
 dm-tree==0.1.8
 et-xmlfile==1.1.0
