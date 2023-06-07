@@ -42,12 +42,12 @@ ml-dtypes==0.1.0
 mpmath==1.2.1
 munkres==1.1.4
 mypy-extensions==0.4.3
+numpy==1.22
 oauthlib==3.2.2
 openpyxl==3.0.10
 opt-einsum==3.3.0
 packaging==21.3
 pandas==2.0.2
-patsy==0.5.3
 pep8==1.7.1
 Pillow==9.4.0
 ply==3.11
@@ -57,7 +57,6 @@ pyasn1-modules==0.2.8
 pycurl==7.45.1
 PyDispatcher==2.0.5
 pyFUME==0.2.25
-pyLDAvis==3.4.1
 pyls-spyder==0.4.0
 PyQt5-sip==12.11.0
 pytest==7.1.2
