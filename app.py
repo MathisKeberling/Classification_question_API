@@ -15,7 +15,9 @@ import pandas as pd
 # USE
 import tensorflow_hub as hub 
 
-get_ipython().run_line_magic('run', 'Cleaning.ipynb')
+# Importer les fonctions de mon fichier de nettoyage
+import Cleaning as clean
+
 
 app = Flask(__name__)
 api = Api(app)
@@ -60,7 +62,7 @@ class Autotag(Resource):
                         description: Liste de tags prédits avec plus de 35% de probabilités
         """
         # Nettoyer la question 
-        cleaned_question = process_text_vf(question)
+        cleaned_question = clean.process_text_vf(question)
         
         # Transformer notre question
         cleaned_question = ' '.join(cleaned_question)
