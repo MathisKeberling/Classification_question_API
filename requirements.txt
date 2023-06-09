@@ -31,7 +31,7 @@ mpmath==1.2.1
 munkres==1.1.4
 mypy-extensions==0.4.3
 nltk==3.6.5
-numpy==1.22
+numpy==1.20.2
 oauthlib==3.2.2
 openpyxl==3.0.10
 opt-einsum==3.3.0
