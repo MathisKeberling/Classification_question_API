@@ -93,7 +93,7 @@ class Autotag(Resource):
         return results, 200
 
 
-api.add_resource(Autotag, '/autotag/<predictions>')
+api.add_resource(Autotag, '/autotag/<question>')
 
 if __name__ == "__main__":
     app.run()
