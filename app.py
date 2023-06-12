@@ -60,15 +60,10 @@ class Autotag(Resource):
         # Nettoyer la question 
         cleaned_question = clean.process_text_vf(question)
         
-        # Transformer notre question
-        cleaned_question = ' '.join(cleaned_question)
-        cleaned_question = [cleaned_question]
-        
         # Appliquer le transformateur choisi
-        X_tfidf = vectorizer.transform(cleaned_question)
+        X_tfidf = vectorizer.transform([cleaned_question])
         
-        
-        # Prrédire les données
+        # Prédire les données
         predict = model.predict(X_tfidf)
         predict_probas = model.predict_proba(X_tfidf)
         
